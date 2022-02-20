@@ -1,0 +1,14 @@
+.daily-todo-title button {
+  margin: auto;
+  display: flex;
+
+  width: 100px;
+  font-size: 1em;
+  color: #fff;
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
