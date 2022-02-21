@@ -5,7 +5,7 @@ import { useFetch } from "../../../hooks/useFetch";
 //Style Css
 import "./CreateTodo.css";
 
-export default function CreateTodo({ dailyList }) {
+export default function CreateTodo() {
   const [title, setTitle] = useState("");
   const [note, setNote] = useState("");
   const [hour, setHour] = useState("");

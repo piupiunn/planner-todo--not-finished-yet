@@ -5,7 +5,7 @@
   max-width: 1200px;
   margin: 40px auto;
 }
-.daily-todo-list-card {
+.daily-list-card {
   background: #fff;
   color: #333;
   padding: 10px;
@@ -15,19 +15,87 @@
   position: relative;
   width: 270px;
 }
+
 .daily-todo-list-card:hover {
   transform: rotate(3deg);
 }
-.daily-todo-list-card h2 {
+
+.daily-list-title {
   color: #555;
   margin-bottom: 6px;
-  font-size: 20px;
+  margin-left: 1px;
+  font-size: 18px;
+  margin-top: 10px;
+  display: inline-flex;
+  text-transform: capitalize;
 }
+
+.todo-check-box {
+  width: 12px;
+  height: 12px;
+  margin-top: 6px;
+}
+
 .daily-list-note {
   color: #999;
   font-size: 15px;
+  margin-bottom: 2px;
+  text-transform: capitalize;
 }
 
 .daily-list-hour {
-  font-size: 18px;
+  font-size: 13px;
+}
+
+.daily-list-button {
+  border: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 0px;
+  background-color: red;
+}
+
+.todo-card-color-pick {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border: 1px;
+}
+.red-button {
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  width: 12px;
+  height: 12px;
+}
+.blue-button {
+  background-color: blue;
+  border-radius: 50%;
+  border: none;
+  margin-left: 1px;
+  width: 12px;
+  height: 12px;
+}
+.green-button {
+  background-color: green;
+  border-radius: 50%;
+  border: none;
+  margin-left: 1px;
+  width: 12px;
+  height: 12px;
+}
+
+.todo-list-close-button {
+  background-color: rgb(0, 102, 128);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 10px;
+  height: 16px;
+}
+
+.todo-title-strike {
+  text-decoration: line-through;
 }

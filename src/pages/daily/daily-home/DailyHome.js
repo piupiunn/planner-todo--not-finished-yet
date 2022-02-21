@@ -20,13 +20,18 @@ export default function DailyHome() {
     setShowDailyModal(false);
   };
 
+  const checkedBox = (e) => {
+    e.target.disabled = true;
+    e.target.parentElement.style.setProperty("text-decoration", "line-through");
+  };
+
   return (
     <>
       <DailyTitle setShowDailyModal={setShowDailyModal} />
       <div className="daily-home">
         {isPending && <div className="loading">Loading..</div>}
         {error && <div className="error">{error}</div>}
-        {dailys && <TodoList dailys={dailys} />}
+        {dailys && <TodoList dailys={dailys} checkedBox={checkedBox} />}
       </div>
       {showDailyModal && (
         <Modal closeDailyModal={closeDailyModal}>
