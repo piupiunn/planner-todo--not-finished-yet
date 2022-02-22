@@ -54,7 +54,8 @@
   left: 0px;
   right: 0px;
   padding-bottom: 0px;
-  background-color: red;
+  background-color: rgb(10, 0, 0);
+  height: 15px;
 }
 
 .todo-card-color-pick {
@@ -69,6 +70,8 @@
   border: none;
   width: 12px;
   height: 12px;
+  position: absolute;
+  top: 1px;
 }
 .blue-button {
   background-color: blue;
@@ -77,6 +80,9 @@
   margin-left: 1px;
   width: 12px;
   height: 12px;
+  position: absolute;
+  top: 1px;
+  left: 13px;
 }
 .green-button {
   background-color: green;
@@ -85,10 +91,13 @@
   margin-left: 1px;
   width: 12px;
   height: 12px;
+  position: absolute;
+  top: 1px;
+  left: 28px;
 }
 
 .todo-list-close-button {
-  background-color: rgb(0, 102, 128);
+  background-color: red;
   position: absolute;
   top: 0px;
   right: 0px;

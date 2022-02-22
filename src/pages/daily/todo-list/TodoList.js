@@ -3,11 +3,30 @@ import React from "react";
 import "./TodoList.css";
 
 export default function TodoList({ dailys, checkedBox }) {
+  const changeColorRed = (e) => {
+    e.target.parentElement.style.setProperty("background-color", "red");
+  };
+
+  const changeColorBlue = (e) => {
+    e.target.parentElement.style.setProperty("background-color", "blue");
+  };
+
+  const changeColorGreen = (e) => {
+    e.target.parentElement.style.setProperty("background-color", "green");
+  };
+
   return (
     <div className="daily-list">
       {dailys.map((daily) => (
         <div key={daily.id} className="daily-list-card">
-          <button className="daily-list-button">+</button>
+          <div className="daily-list-button">
+            <button onClick={changeColorRed} className="red-button"></button>
+            <button onClick={changeColorBlue} className="blue-button"></button>
+            <button
+              onClick={changeColorGreen}
+              className="green-button"
+            ></button>
+          </div>
           <button className="todo-list-close-button"> </button>
 
           <h2 className="daily-list-title">
@@ -25,11 +44,6 @@ export default function TodoList({ dailys, checkedBox }) {
             <em>{daily.note}</em>
           </p>
           <div className="daily-list-hour">{daily.hour}</div>
-          <div className="todo-card-color-pick">
-            <button className="red-button"></button>
-            <button className="blue-button"></button>
-            <button className="green-button"></button>
-          </div>
         </div>
       ))}
     </div>
