@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import "./TodoList.css";
 
@@ -17,7 +17,7 @@ export default function TodoList({ dailys, checkedBox }) {
 
   return (
     <div className="daily-list">
-      {dailys.map((daily) => (
+      {dailys.map((daily, index) => (
         <div key={daily.id} className="daily-list-card">
           <div className="daily-list-button">
             <button onClick={changeColorRed} className="red-button"></button>
