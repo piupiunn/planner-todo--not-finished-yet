@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
+import { useFetch } from "../../../hooks/useFetch";
 
 import "./TodoList.css";
 
-export default function TodoList({ dailys, checkedBox }) {
+export default function TodoList({ checkedBox, dailys }) {
   const changeColorRed = (e) => {
     e.target.parentElement.style.setProperty("background-color", "red");
   };
@@ -27,7 +28,7 @@ export default function TodoList({ dailys, checkedBox }) {
               className="green-button"
             ></button>
           </div>
-          <button className="todo-list-close-button"> </button>
+          <button className="todo-list-close-button"></button>
 
           <h2 className="daily-list-title">
             <input
