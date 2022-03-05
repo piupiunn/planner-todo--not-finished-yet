@@ -96,15 +96,40 @@
   left: 28px;
 }
 
-.todo-list-close-button {
-  background-color: red;
+.todo-card-color-pick {
   position: absolute;
-  top: 0px;
   right: 0px;
-  width: 10px;
-  height: 16px;
+  bottom: 0px;
+  border: 1px;
 }
-
-.todo-title-strike {
-  text-decoration: line-through;
+.red-button {
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 1px;
+}
+.blue-button {
+  background-color: blue;
+  border-radius: 50%;
+  border: none;
+  margin-left: 1px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 1px;
+  left: 13px;
+}
+.green-button {
+  background-color: green;
+  border-radius: 50%;
+  border: none;
+  margin-left: 1px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 1px;
+  left: 28px;
 }
